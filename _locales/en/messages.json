@@ -6,10 +6,10 @@
     "message": "'unset'"
   },
   "submit_button": {
-    "message": "Add to page"
+    "message": "Add JS to web page"
   },
   "submitSave_button": {
-    "message": "Save in textarea"
+    "message": "Save JS in textarea"
   },
   "open_in_tab_button": {
     "message": "Open in tab"

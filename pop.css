@@ -1,0 +1,32 @@
+body {
+  width: 600px;
+  height: 700px;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#outside {
+  padding: 0.5em;
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  font-family: Arial;
+  font-size: 21px;
+}
+
+button {
+  font-size: 18px;
+  width: auto;
+}
+
+li {
+  font-size: 21px;
+  width: 100%;
+}
+
+div {
+  padding: 7px 0px 0px 7px;
+}

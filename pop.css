@@ -1,6 +1,6 @@
 body {
   width: 600px;
-  height: 700px;
+  height: 600px;
   max-width: 90%;
   max-height: 90%;
 }
@@ -12,21 +12,34 @@ body {
 
 textarea {
   width: 100%;
-  margin-bottom: 1em;
   font-family: Arial;
   font-size: 21px;
 }
 
+#inside textarea {
+  margin: 0px 0px 7px 0px;
+}
+
 button {
   font-size: 18px;
-  width: auto;
+}
+
+li textarea {
+  border: none;
+  font-size: 19px;
+  width: calc(100% - 100px);
+  height: 30px;
+}
+
+li input {
+  float:left;
 }
 
 li {
-  font-size: 21px;
-  width: 100%;
+  float:left;
+  min-width: 100%;
 }
 
 div {
-  padding: 7px 0px 0px 7px;
+  padding: 0px 0px 7px 0px;
 }

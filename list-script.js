@@ -134,8 +134,8 @@ function checkbox_click() {
     button.textContent = browser.i18n.getMessage("overwrite");
     this.parentNode.insertBefore(button, this.nextSibling);
     button.addEventListener('click', function () {
-      toSet(this.parentNode.querySelector('span').getAttribute('name'));
-      this.parentNode.querySelector('span').textContent = document.getElementById('code').value || browser.i18n.getMessage("unset");
+      toSet(this.parentNode.querySelector('textarea').getAttribute('name'));
+      this.parentNode.querySelector('textarea').textContent = document.getElementById('code').value || browser.i18n.getMessage("unset");
     });
   } else {
     this.nextSibling.remove();

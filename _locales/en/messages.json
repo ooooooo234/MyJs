@@ -1,0 +1,23 @@
+{
+  "defaultcode": {
+    "message": "alert('Hello world');"
+  },
+  "unset": {
+    "message": "'unset'"
+  },
+  "submit_button": {
+    "message": "Add to page"
+  },
+  "submitSave_button": {
+    "message": "Save in textarea"
+  },
+  "open_in_tab_button": {
+    "message": "Open in tab"
+  },
+  "overwrite": {
+    "message": "Overwrite"
+  },
+  "write_js_here_label": {
+    "message": "Write JavaScript here:"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "defaultcode": {
+    "message": "alert('Hello world');"
+  },
+  "unset": {
+    "message": "'未設定'"
+  },
+  "submit_button": {
+    "message": "加到頁面中"
+  },
+  "submitSave_button": {
+    "message": "保存在文字框中"
+  },
+  "open_in_tab_button": {
+    "message": "在分頁中開啟"
+  },
+  "overwrite": {
+    "message": "覆寫"
+  },
+  "write_js_here_label": {
+    "message": "在這裡寫 JavaScript :"
+  }
+}

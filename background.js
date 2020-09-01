@@ -20,76 +20,107 @@ menus.create({
     'all'
   ]
 });
-menus.create({
-  id: 'list_1',
-  title: 'list_1',
-  contexts: [
-    'all'
-  ]
+let create_menus;
+create_menus = browser.storage.sync.get(['list_1'], function (res) {
+  menus.create({
+    id: 'list_1',
+    title: res.list_1.split('').slice(0, 25).join('') || 'list_1',
+    contexts: [
+      'all'
+    ]
+  });
 });
-menus.create({
-  id: 'list_2',
-  title: 'list_2',
-  contexts: [
-    'all'
-  ]
+create_menus;
+create_menus = browser.storage.sync.get(['list_2'], function (res) {
+  menus.create({
+    id: 'list_2',
+    title: res.list_2.split('').slice(0, 25).join('') || 'list_2',
+    contexts: [
+      'all'
+    ]
+  });
 });
-menus.create({
-  id: 'list_3',
-  title: 'list_3',
-  contexts: [
-    'all'
-  ]
+create_menus;
+create_menus = browser.storage.sync.get(['list_3'], function (res) {
+  menus.create({
+    id: 'list_3',
+    title: res.list_3.split('').slice(0, 25).join('') || 'list_3',
+    contexts: [
+      'all'
+    ]
+  });
 });
-menus.create({
-  id: 'list_4',
-  title: 'list_4',
-  contexts: [
-    'all'
-  ]
+create_menus;
+create_menus = browser.storage.sync.get(['list_4'], function (res) {
+  menus.create({
+    id: 'list_4',
+    title: res.list_4.split('').slice(0, 25).join('') || 'list_4',
+    contexts: [
+      'all'
+    ]
+  });
 });
-menus.create({
-  id: 'list_5',
-  title: 'list_5',
-  contexts: [
-    'all'
-  ]
+create_menus;
+create_menus = browser.storage.sync.get(['list_5'], function (res) {
+  menus.create({
+    id: 'list_5',
+    title: res.list_5.split('').slice(0, 25).join('') || 'list_5',
+    contexts: [
+      'all'
+    ]
+  });
 });
-menus.create({
-  id: 'list_6',
-  title: 'list_6',
-  contexts: [
-    'all'
-  ]
+create_menus;
+create_menus = browser.storage.sync.get(['list_6'], function (res) {
+  menus.create({
+    id: 'list_6',
+    title: res.list_6.split('').slice(0, 25).join('') || 'list_6',
+    contexts: [
+      'all'
+    ]
+  });
 });
-menus.create({
-  id: 'list_7',
-  title: 'list_7',
-  contexts: [
-    'all'
-  ]
+create_menus;
+create_menus = browser.storage.sync.get(['list_7'], function (res) {
+  menus.create({
+    id: 'list_7',
+    title: res.list_7.split('').slice(0, 25).join('') || 'list_7',
+    contexts: [
+      'all'
+    ]
+  });
 });
-menus.create({
-  id: 'list_8',
-  title: 'list_8',
-  contexts: [
-    'all'
-  ]
+create_menus;
+create_menus = browser.storage.sync.get(['list_8'], function (res) {
+  menus.create({
+    id: 'list_8',
+    title: res.list_8.split('').slice(0, 25).join('') || 'list_8',
+    contexts: [
+      'all'
+    ]
+  });
 });
-menus.create({
-  id: 'list_9',
-  title: 'list_9',
-  contexts: [
-    'all'
-  ]
+create_menus;
+create_menus = browser.storage.sync.get(['list_9'], function (res) {
+  menus.create({
+    id: 'list_9',
+    title: res.list_9.split('').slice(0, 25).join('') || 'list_9',
+    contexts: [
+      'all'
+    ]
+  });
 });
-menus.create({
-  id: 'list_10',
-  title: 'list_10',
-  contexts: [
-    'all'
-  ]
+create_menus;
+create_menus = browser.storage.sync.get(['list_10'], function (res) {
+  menus.create({
+    id: 'list_10',
+    title: res.list_10.split('').slice(0, 25).join('') || 'list_10',
+    contexts: [
+      'all'
+    ]
+  });
 });
+create_menus;
 menus.onClicked.addListener(function (info, tab) {
   switch (info.menuItemId) {
     case 'fullscreen':

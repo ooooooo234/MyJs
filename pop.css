@@ -25,10 +25,10 @@ button {
 }
 
 li textarea {
-  border: none;
-  font-size: 19px;
   width: calc(100% - 100px);
   height: 30px;
+  border: none;
+  font-size: 19px;
 }
 
 li input {

@@ -1,3 +1,13 @@
+let menus;
+try {
+  if (browser) {
+    menus = browser.menus;
+  } else {
+    menus = chrome.contextMenus;
+  }
+} catch (e) {
+  menus = chrome.contextMenus;
+}
 try {
   browser = browser || chrome;
 } catch (e) {
@@ -9,11 +19,11 @@ function toSet(e) {
   switch (Number(e)) {
     case 1:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'list_1': document.getElementById('code').value
         });
         doing;
-        let updating = browser.menus.update('list_1', {
+        let updating = menus.update('list_1', {
           title: document.getElementById('code').value.split('').slice(0, 25).join('') || 'list_1'
         });
         updating;
@@ -21,11 +31,11 @@ function toSet(e) {
       }
     case 2:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'list_2': document.getElementById('code').value
         });
         doing;
-        let updating = browser.menus.update('list_2', {
+        let updating = menus.update('list_2', {
           title: document.getElementById('code').value.split('').slice(0, 25).join('') || 'list_2'
         });
         updating;
@@ -33,11 +43,11 @@ function toSet(e) {
       }
     case 3:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'list_3': document.getElementById('code').value
         });
         doing;
-        let updating = browser.menus.update('list_3', {
+        let updating = menus.update('list_3', {
           title: document.getElementById('code').value.split('').slice(0, 25).join('') || 'list_3'
         });
         updating;
@@ -45,11 +55,11 @@ function toSet(e) {
       }
     case 4:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'list_4': document.getElementById('code').value
         });
         doing;
-        let updating = browser.menus.update('list_4', {
+        let updating = menus.update('list_4', {
           title: document.getElementById('code').value.split('').slice(0, 25).join('') || 'list_4'
         });
         updating;
@@ -57,11 +67,11 @@ function toSet(e) {
       }
     case 5:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'list_5': document.getElementById('code').value
         });
         doing;
-        let updating = browser.menus.update('list_5', {
+        let updating = menus.update('list_5', {
           title: document.getElementById('code').value.split('').slice(0, 25).join('') || 'list_5'
         });
         updating;
@@ -69,11 +79,11 @@ function toSet(e) {
       }
     case 6:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'list_6': document.getElementById('code').value
         });
         doing;
-        let updating = browser.menus.update('list_6', {
+        let updating = menus.update('list_6', {
           title: document.getElementById('code').value.split('').slice(0, 25).join('') || 'list_6'
         });
         updating;
@@ -81,11 +91,11 @@ function toSet(e) {
       }
     case 7:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'list_7': document.getElementById('code').value
         });
         doing;
-        let updating = browser.menus.update('list_7', {
+        let updating = menus.update('list_7', {
           title: document.getElementById('code').value.split('').slice(0, 25).join('') || 'list_7'
         });
         updating;
@@ -93,11 +103,11 @@ function toSet(e) {
       }
     case 8:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'list_8': document.getElementById('code').value
         });
         doing;
-        let updating = browser.menus.update('list_8', {
+        let updating = menus.update('list_8', {
           title: document.getElementById('code').value.split('').slice(0, 25).join('') || 'list_8'
         });
         updating;
@@ -105,11 +115,11 @@ function toSet(e) {
       }
     case 9:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'list_9': document.getElementById('code').value
         });
         doing;
-        let updating = browser.menus.update('list_9', {
+        let updating = menus.update('list_9', {
           title: document.getElementById('code').value.split('').slice(0, 25).join('') || 'list_9'
         });
         updating;
@@ -117,11 +127,11 @@ function toSet(e) {
       }
     case 10:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'list_10': document.getElementById('code').value
         });
         doing;
-        let updating = browser.menus.update('list_10', {
+        let updating = menus.update('list_10', {
           title: document.getElementById('code').value.split('').slice(0, 25).join('') || 'list_10'
         });
         updating;
@@ -129,7 +139,7 @@ function toSet(e) {
       }
     default:
       {
-        let doing = chrome.storage.sync.set({
+        let doing = browser.storage.sync.set({
           'code': document.getElementById('code').value
         });
         doing;

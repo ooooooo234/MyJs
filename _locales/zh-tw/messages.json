@@ -12,12 +12,24 @@
     "message": "將JS保存在文字框中"
   },
   "open_in_tab_button": {
-    "message": "在分頁中開啟"
+    "message": "在分頁中打開此頁"
   },
   "overwrite": {
     "message": "覆寫"
   },
   "write_js_here_label": {
     "message": "在這裡寫 JavaScript :"
+  },
+  "extra_options": {
+    "message": "更多選項"
+  },
+  "fullscreen_visible_label": {
+    "message": "隱藏選單中的 \"全螢幕\" 功能"
+  },
+  "page_title": {
+    "message": "MyJs 選項頁"
+  },
+  "fullscreen_title": {
+    "message": "全螢幕"
   }
 }

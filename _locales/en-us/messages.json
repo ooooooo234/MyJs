@@ -19,5 +19,17 @@
   },
   "write_js_here_label": {
     "message": "Write JavaScript here:"
+  },
+  "extra_options": {
+    "message": "extra options"
+  },
+  "fullscreen_visible_label": {
+    "message": "Hide \"fullscreen\" feature in context menu"
+  },
+  "page_title": {
+    "message": "MyJs Options page"
+  },
+  "fullscreen_title": {
+    "message": "fullscreen"
   }
 }

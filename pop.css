@@ -1,45 +1,79 @@
+* {
+    font-family: "游ゴシック", "メイリオ", Arial;
+    font-weight: 500;
+    line-height: 1.4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
-  width: 600px;
-  height: 600px;
-  max-width: 90%;
-  max-height: 90%;
+    width: 600px;
+    height: 600px;
+    min-width: calc(100% - 2em);
+    min-height: calc(100% - 2em);
+    max-width: calc(100% - 2em);
+    max-height: calc(100% - 2em);
+    margin: 0;
+    padding: 0;
 }
 
-#outside {
-  padding: 0.5em;
-  font-size: 18px;
-}
-
-textarea {
-  width: 100%;
-  font-family: Arial;
-  font-size: 21px;
-}
-
-#inside textarea {
-  margin: 0px 0px 7px 0px;
+div, ol, li, textarea {
+    width: 100%;
 }
 
 button {
-  font-size: 18px;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 6px 6px 1px 0px !important;
 }
 
-li textarea {
-  width: calc(100% - 100px);
-  height: 30px;
-  border: none;
-  font-size: 19px;
+details {
+    padding: 0px 0px 0px 20px;
 }
 
-li input {
-  float:left;
+ul, ol {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
 
-li {
-  float:left;
-  min-width: 100%;
+li div , .flex_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-div {
-  padding: 0px 0px 7px 0px;
+#outside {
+    padding: 0.5em;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+textarea {
+    font-family: Arial;
+}
+
+textarea#code {
+    font-size: 21px;
+}
+
+#list textarea {
+    height: 30px;
+    border: none;
+    font-size: 19px;
+}
+
+ul#checkbox span {
+    font-size: 0.8em
+}
+
+ul.no-marker {
+    list-style-type: none;
 }
